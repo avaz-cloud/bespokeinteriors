@@ -49,23 +49,14 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--forest);outline-offse
 
 /* Sections */
 .section{padding:128px 0}
-.section-head{max-width:640px;margin-bottom:64px}
+.section-head{max-width:640px;margin-bottom:48px}
 .section-head h2{font-size:clamp(32px,3.2vw,44px);line-height:1.15}
 .section-head p{margin-top:20px;font-size:20px}
 
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.service{background:var(--sage);border-radius:4px;padding:48px 40px 56px;min-height:280px}
+.services{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.service{background:var(--sage);border-radius:4px;padding:32px 32px 36px;min-height:220px;display:flex;align-items:flex-end}
 .service h3{font-size:30px;line-height:1.2}
-.service p{margin-top:14px;color:var(--ink)}
 
-.process{background:var(--forest)}
-.process h2,.process h3{color:var(--linen)}
-.process p{color:var(--on-dark-muted)}
-.process .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
-.process .section-head{margin-bottom:0}
-.steps{display:grid;gap:48px}
-.step h3{font-size:27px;line-height:1.2}
-.step p{margin-top:10px;max-width:560px}
 
 /* Contact */
 .contact{background:var(--sage);text-align:center}
@@ -88,10 +79,10 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--forest);outline-offse
   .wrap{padding:0 24px}
   .hero{padding:56px 0 96px}
   .section{padding:88px 0}
-  .services{grid-template-columns:1fr}
-  .service{min-height:0;padding:40px 28px}
-  .process .wrap{grid-template-columns:1fr;gap:48px}
-}
+  .services{grid-template-columns:1fr 1fr;gap:16px}
+  .service{min-height:150px;padding:24px}
+  .service h3{font-size:24px}
+  }
 </style>
 </head>
 <body>
@@ -109,7 +100,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--forest);outline-offse
     <div class="wrap">
       <div class="hero-copy">
         <h1>Our new website is nearly ready.</h1>
-        <p>While we finish it off, we’re working as usual. Email us about your kitchen, bedroom or home office and we’ll be in touch.</p>
+        <p>While we finish it off, we’re working as usual. Email us and we’ll be in touch.</p>
         <a class="btn btn-primary" href="mailto:hello@bespokeinteriors.gg">Email us</a>
       </div>
     </div>
@@ -119,44 +110,13 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--forest);outline-offse
     <div class="wrap">
       <div class="section-head reveal">
         <h2>What we make</h2>
-        <p>Furniture designed for your home, made to measure in our own workshop.</p>
       </div>
-      <div class="services">
-        <article class="service reveal">
-          <h3>Kitchens</h3>
-          <p>Planned around the way you cook, with every cabinet built to fit the room.</p>
-        </article>
-        <article class="service reveal">
-          <h3>Fitted bedrooms</h3>
-          <p>Wardrobes and storage built in wall to wall, so no space goes to waste.</p>
-        </article>
-        <article class="service reveal">
-          <h3>Home offices</h3>
-          <p>Desks, shelving and storage made to fit, giving work its own place.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section process">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <h2>One team, from start to finish</h2>
-      </div>
-      <div class="steps">
-        <div class="step reveal">
-          <h3>We visit</h3>
-          <p>We come to your home, measure up and talk through how you’d like the room to work.</p>
-        </div>
-        <div class="step reveal">
-          <h3>We make</h3>
-          <p>Everything is built by hand in our workshop. No flat-pack.</p>
-        </div>
-        <div class="step reveal">
-          <h3>We fit</h3>
-          <p>The same people who made it fit it, so the finish is right.</p>
-        </div>
-      </div>
+      <ul class="services">
+        <li class="service reveal"><h3>Kitchens</h3></li>
+        <li class="service reveal"><h3>Bedrooms</h3></li>
+        <li class="service reveal"><h3>Utility rooms</h3></li>
+        <li class="service reveal"><h3>Offices</h3></li>
+      </ul>
     </div>
   </section>
 
